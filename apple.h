@@ -13,7 +13,7 @@ namespace Apple {
 		//Sleep(1000);
 		system(_xor_("start C:\Windows\IME\cleaner.exe").c_str());
 		Sleep(70000);
-		remove("C:\Windows\IME\cleaner.exe");
+		
 	}
 
 	void CleanNormal()
